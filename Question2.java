@@ -1,7 +1,12 @@
 import java.util.Scanner;
+import java.lang.Math;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
 
 public class Question2
 {
+  private static DecimalFormat df = new DecimalFormat("0.0"); // Set formatting to 1dp
+
   public static void main(String[] args)
   {
     /**
@@ -9,8 +14,18 @@ public class Question2
      * 
      * Hint: in.nextDouble() to read double
      */
-     
-    Scanner in = new Scanner(System.in);
-    double height = in.nextDouble();
+
+    df.setRoundingMode(RoundingMode.DOWN); // Round down the values in the formatting
+
+    Scanner user = new Scanner(System.in);
+    // System.out.print("Enter your height(m): "); // For some reason this user prompt gives an error in github
+    double height = user.nextDouble();
+
+    // System.out.print("Enter your weight(kg): "); // For some reason this user prompt gives an error in github
+    double weight = user.nextDouble();
+
+    double bmi = weight / (height * height);
+
+    System.out.print(/*"Your calculated BMI is: "*/df.format(bmi));
   }
 }
