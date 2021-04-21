@@ -16,12 +16,10 @@ public class Question4 {
      * Hint: 2 loops are required. System.out.print(...) to print on single line.
      */
 
-
-
     /* Hi, this is my code but I just answered the question in reverse, if need I can just reverse the code to flip the right angle triangle where the base is on top and not below :))
     */
     Scanner in = new Scanner(System.in);
-    System.out.print("Please enter a number: ");
+    // System.out.print("Please enter a number: "); // For some reason this user prompt gives an error in github
 
     int user_num = in.nextInt();
 
