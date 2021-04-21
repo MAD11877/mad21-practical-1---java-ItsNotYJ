@@ -11,9 +11,9 @@ public class Question3
      */
     
     Scanner in = new Scanner(System.in);
-    System.out.print("Please enter a number: ");
+    // System.out.print("Please enter a number: "); // For some reason this user prompt gives an error in github
     int user_num = in.nextInt();
 
-    System.out.println("The square of this number is: " + (user_num * user_num));
+    System.out.println(/*"The square of this number is: "*/ + (user_num * user_num));
   }
 }

@@ -18,14 +18,14 @@ public class Question2
     df.setRoundingMode(RoundingMode.DOWN); // Round down the values in the formatting
 
     Scanner user = new Scanner(System.in);
-    // System.out.print("Enter your height(m): ");
+    // System.out.print("Enter your height(m): "); // For some reason this user prompt gives an error in github
     double height = user.nextDouble();
 
-    // System.out.print("Enter your weight(kg): ");
+    // System.out.print("Enter your weight(kg): "); // For some reason this user prompt gives an error in github
     double weight = user.nextDouble();
 
     double bmi = weight / (height * height);
 
-    System.out.print(df.format(bmi));
+    System.out.print(/*"Your calculated BMI is: "*/df.format(bmi));
   }
 }
