@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 
 public class Question2
 {
-  private static DecimalFormat df = new DecimalFormat("0.00");
+  private static DecimalFormat df = new DecimalFormat("0.0");
 
   public static void main(String[] args)
   {

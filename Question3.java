@@ -9,7 +9,7 @@ public class Question3
      * 
      * Hint: in.nextInt() to read integer
      */
-     
+    
     Scanner in = new Scanner(System.in);
     System.out.print("Please enter a number: ");
     int user_num = in.nextInt();
