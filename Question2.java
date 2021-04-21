@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 
 public class Question2
 {
-  private static DecimalFormat df = new DecimalFormat("0.0");
+  private static DecimalFormat df = new DecimalFormat("0.0"); // Set formatting to 1dp
 
   public static void main(String[] args)
   {
@@ -14,16 +14,18 @@ public class Question2
      * 
      * Hint: in.nextDouble() to read double
      */
-    df.setRoundingMode(RoundingMode.DOWN);
+
+    df.setRoundingMode(RoundingMode.DOWN); // Round down the values in the formatting
+
     Scanner user = new Scanner(System.in);
-    System.out.print("Enter your height(m): ");
+    // System.out.print("Enter your height(m): ");
     double height = user.nextDouble();
 
-    System.out.print("Enter your weight(kg): ");
+    // System.out.print("Enter your weight(kg): ");
     double weight = user.nextDouble();
 
     double bmi = weight / (height * height);
 
-    System.out.print("Your BMI is: " + df.format(bmi));
+    System.out.print(df.format(bmi));
   }
 }
