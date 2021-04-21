@@ -28,14 +28,14 @@ public class Question5
      * Hint: Use a loop to get input. Use another 2 loops to find the mode
      */
     Scanner in = new Scanner(System.in);
-    System.out.print("Please enter the number of integers you will enter: ");
+    // System.out.print("Please enter the number of integers you will enter: "); // For some reason this user prompt gives an error in github
     
     ArrayList<Integer> numbers = new ArrayList<>();
     int no_of_entries = in.nextInt();
     
     int x = 0;
     while (x < no_of_entries) {
-      System.out.print("Please enter a number: ");
+      // System.out.print("Please enter a number: "); // For some reason this user prompt gives an error in github
       numbers.add(in.nextInt()); // Append each input into arrayList
       x++;
     }
@@ -72,5 +72,7 @@ public class Question5
         continue;
       }
     }
+
+    System.out.println(num_mode);
   }
 }
