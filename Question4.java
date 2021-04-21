@@ -26,8 +26,9 @@ public class Question4 {
     int i = 0;
 
     while (i < user_num) {
+      System.out.println();
       for (int x = 0; x <= i; x++) {
-        System.out.println("*");
+        System.out.print("*");
       }
       // System.out.println();
       i++;
