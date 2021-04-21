@@ -5,7 +5,7 @@ public class Question4 {
     /**
      * Prints a right angle triangle with *. The base of the triangle depends on the
      * integer given. e.g. > 5 
-
+     
      *****
      **** 
      *** 
@@ -23,15 +23,14 @@ public class Question4 {
 
     int user_num = in.nextInt();
 
-    int i = 0;
+    int i = user_num;
 
-    while (i < user_num) {
-      System.out.println();
-      for (int x = 0; x <= i; x++) {
+    while (i > 0) {
+      for (int x = i; x > 0; x--) {
         System.out.print("*");
       }
-      // System.out.println();
-      i++;
+      System.out.println();
+      i--;
     }
   }
 }
